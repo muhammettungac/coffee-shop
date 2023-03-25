@@ -1,0 +1,178 @@
+[
+  {
+    "title": "Espresso Con Panna",
+    "type": "coffee",
+    "subType": "Espresso",
+    "price": "45",
+    "description": "Krema ile süslenmiş, karamel tatlılığı sunan espresso",
+    "picture": "https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?data=eyJpbWFnZUlkIjoiMTYyODBhMGYtMGNkMC00MTYwLWIwZDEtMTRiZDMyNzkzYmU5Iiwid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjAsImZpdCI6Im91dHNpZGUiLCJjb250ZW50VHlwZSI6ImltYWdlL3dlYnAiLCJxdWFsaXR5IjozMH0="
+  },
+  {
+    "title": "Espresso",
+    "type": "coffee",
+    "subType": "Espresso",
+    "price": "40",
+    "description": "Karamel notaları ve zengin lezzetiyle espresso",
+    "picture": "https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?data=eyJpbWFnZUlkIjoiNmYyNzMzMjctZDU4Ny00ODIyLWIwZGQtOWU0ZmMyMmIyNzY4Iiwid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjAsImZpdCI6Im91dHNpZGUiLCJjb250ZW50VHlwZSI6ImltYWdlL3dlYnAiLCJxdWFsaXR5IjozMH0="
+  },
+  {
+    "title": "Espresso Macchiato",
+    "type": "coffee",
+    "subType": "Espresso",
+    "price": "41",
+    "description": "Buharla ısıtılmış süt köpüğünün dokunuşuyla espresso",
+    "picture": "https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?data=eyJpbWFnZUlkIjoiZWFlZDI2M2YtYjhlNy00ZTYyLWJkMzEtMWQ1MGJiYmY0ZjU4Iiwid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjAsImZpdCI6Im91dHNpZGUiLCJjb250ZW50VHlwZSI6ImltYWdlL3dlYnAiLCJxdWFsaXR5IjozMH0="
+  },
+  {
+    "title": "Buzlu White Chocolate Mocha",
+    "type": "coffee",
+    "subType": "Mocha",
+    "price": "31",
+    "description": "Espresso, beyaz çikolata sosu, soğuk süt ve buzun buluşması, krema ile süslenerek sunulur.",
+    "picture": "https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?data=eyJpbWFnZUlkIjoiMTNiMTkyMjEtY2ZlMy00ZWRkLTg4MzAtMDI3MTA4MjU5NmIyIiwid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjAsImZpdCI6Im91dHNpZGUiLCJjb250ZW50VHlwZSI6ImltYWdlL3dlYnAiLCJxdWFsaXR5IjozMH0="
+  },
+  {
+    "title": "Caffè Mocha",
+    "type": "coffee",
+    "subType": "Mocha",
+    "price": "31",
+    "description": "Espresso, mocha sos (çikolata sos) ve buharla ısıtılmış süt, krema ile tamamlanarak sunulur.",
+    "picture": "https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?data=eyJpbWFnZUlkIjoiYjA1YzI4MGEtZmUyNS00NWQ2LWFhZmYtYTk4ZGI1NWQ3MTgwIiwid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjAsImZpdCI6Im91dHNpZGUiLCJjb250ZW50VHlwZSI6ImltYWdlL3dlYnAiLCJxdWFsaXR5IjozMH0="
+  },
+  {
+    "title": "White Chocolate Mocha",
+    "type": "coffee",
+    "subType": "Mocha",
+    "price": "48",
+    "description": "Espresso, beyaz çikolata sosu ve buharla ısıtılmış süt kahvesini tatlı sevenler için buluştu ve krema ile süslendi.",
+    "picture": "https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?data=eyJpbWFnZUlkIjoiYWQwY2U4YTUtZDVhNC00ZmE1LTg1ZTAtYmNlYWI5NThlMTJlIiwid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjAsImZpdCI6Im91dHNpZGUiLCJjb250ZW50VHlwZSI6ImltYWdlL3dlYnAiLCJxdWFsaXR5IjozMH0="
+  },
+  {
+    "title": "Buzlu Caffè Mocha",
+    "type": "coffee",
+    "subType": "Mocha",
+    "price": "41",
+    "description": "Espresso, mocha sos (çikolata sos), soğuk süt ve buz parçalarının buluştuğu lezzet, krema ile tamamlanarak sunulur.",
+    "picture": "https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?data=eyJpbWFnZUlkIjoiNDQ4MDYxMDctMDM1OS00NGY2LTg5ZGItMzBmZGFmZTFlMTA4Iiwid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjAsImZpdCI6Im91dHNpZGUiLCJjb250ZW50VHlwZSI6ImltYWdlL3dlYnAiLCJxdWFsaXR5IjozMH0="
+  },
+  {
+    "title": "Iced Cappuccino",
+    "type": "coffee",
+    "subType": "Cappuccino",
+    "price": "41",
+    "description": "Buz üzerine eklenen soğuk süt köpüğü, espresso ve şeker şurubunun keyifli buluşması",
+    "picture": "https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?data=eyJpbWFnZUlkIjoiODg1ZjBiOTEtZjgxYS00MTA1LWFhMzEtMzgzYThkMDM0MzdhIiwid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjAsImZpdCI6Im91dHNpZGUiLCJjb250ZW50VHlwZSI6ImltYWdlL3dlYnAiLCJxdWFsaXR5IjozMH0="
+  },
+  {
+    "title": "Cappuccino",
+    "type": "coffee",
+    "subType": "Cappuccino",
+    "price": "44",
+    "description": "Zengin espresso ile buharla ısıtılmış kadifemsi süt ve bol süt köpüğünün buluşması",
+    "picture": "https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?data=eyJpbWFnZUlkIjoiN2FmYzlkOTUtYzg0ZC00NTg5LWI2ZmYtZjdhMzYzZDY3MzY4Iiwid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjAsImZpdCI6Im91dHNpZGUiLCJjb250ZW50VHlwZSI6ImltYWdlL3dlYnAiLCJxdWFsaXR5IjozMH0="
+  },
+  {
+    "title": "Latte Macchiato",
+    "type": "coffee",
+    "subType": "Macchiato",
+    "price": "46",
+    "description": "Buharla ısıtılmış kadifemsi süt ve üzerine yavaşça dökülen nefis espresso lezzetinin dengeli buluşmasıyla ortaya çıkan bir espresso klasiği",
+    "picture": "https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?data=eyJpbWFnZUlkIjoiYmI1YTkxMGUtMDMzZC00ODViLTk0ZTAtYmM3MzQ0NzhkNjFlIiwid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjAsImZpdCI6Im91dHNpZGUiLCJjb250ZW50VHlwZSI6ImltYWdlL3dlYnAiLCJxdWFsaXR5IjozMH0="
+  },
+  {
+    "title": "Caramel Macchiatoo",
+    "type": "coffee",
+    "subType": "Macchiato",
+    "price": "40",
+    "description": "Vanilya şurubu üzerine buharla özenle ısıtılmış süt, süt köpüğü ve espresso dokunuşu, karamel sosla süslenerek sunulur. ",
+    "picture": "https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?data=eyJpbWFnZUlkIjoiYTUzNjU4NzgtMTkxNy00MWQzLWI1YTMtMWFiMDU4MWI0MmY0Iiwid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjAsImZpdCI6Im91dHNpZGUiLCJjb250ZW50VHlwZSI6ImltYWdlL3dlYnAiLCJxdWFsaXR5IjozMH0="
+  },
+  {
+    "title": "Buzlu Caramel Macchiato",
+    "type": "coffee",
+    "subType": "Macchiato",
+    "price": "44",
+    "description": "Vanilya şurubu, soğuk süt, buz, espresso ve üzerine karamel sosla sunulur. ",
+    "picture": "https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?data=eyJpbWFnZUlkIjoiYjQ4OWQ3MjUtOGE4ZC00OGU0LTljOTgtNDY0ZjFhODgwOTUxIiwid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjAsImZpdCI6Im91dHNpZGUiLCJjb250ZW50VHlwZSI6ImltYWdlL3dlYnAiLCJxdWFsaXR5IjozMH0="
+  },
+  {
+    "title": "Caffè Americano",
+    "type": "coffee",
+    "subType": "Americano",
+    "price": "44",
+    "description": "Sıcak su ile inceltilmiş yoğun espresso lezzeti ",
+    "picture": "https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?data=eyJpbWFnZUlkIjoiYWFmNDUxMmMtMDkxMi00ZTMxLWIyN2UtMDkyZWU1NWRkZjBlIiwid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjAsImZpdCI6Im91dHNpZGUiLCJjb250ZW50VHlwZSI6ImltYWdlL3dlYnAiLCJxdWFsaXR5IjozMH0="
+  },
+  {
+    "title": "Buzlu Caffè Americano",
+    "type": "coffee",
+    "subType": "Americano",
+    "price": "44",
+    "description": "Su ile inceltilmiş yoğun espresso lezzetinin buzlu sunumu",
+    "picture": "https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?data=eyJpbWFnZUlkIjoiMjNjN2U0Y2EtMmMxZC00ZmI5LWI2NWItNjQ1YjFjYmI5NDhjIiwid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjAsImZpdCI6Im91dHNpZGUiLCJjb250ZW50VHlwZSI6ImltYWdlL3dlYnAiLCJxdWFsaXR5IjozMH0="
+  },
+  {
+    "title": "Doubleshot™ Iced Shaken Espresso",
+    "type": "coffee",
+    "subType": "Doubleshot",
+    "price": "44",
+    "description": "Krema-süt karışımıyla, espresso ve buz parçalarının buluştuğu soğuk lezzet",
+    "picture": "https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?data=eyJpbWFnZUlkIjoiMzliN2RiZGUtODdhMC00MmZjLWJkOTgtOTQ0YjM1ODEwN2FjIiwid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjAsImZpdCI6Im91dHNpZGUiLCJjb250ZW50VHlwZSI6ImltYWdlL3dlYnAiLCJxdWFsaXR5IjozMH0="
+  },
+  {
+    "title": " Buzlu Gingerbread Latte",
+    "type": "coffee",
+    "subType": "Latte",
+    "price": "40",
+    "description": "Espresso ve gingerbread şurubunun süt ve buz ile buluştuğu, zencefil aromalı krema ve çıtır gofret süslemesiyle sunulan Gingerbread lezzetinin buzlu hali!",
+    "picture": "https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?data=eyJpbWFnZUlkIjoiZTRjNTJiODItNzJkNS00ODQzLTk3NzMtZDQ4YzlkODIwM2YyIiwid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjAsImZpdCI6Im91dHNpZGUiLCJjb250ZW50VHlwZSI6ImltYWdlL3dlYnAiLCJxdWFsaXR5IjozMH0="
+  },
+  {
+    "title": "Cortado",
+    "type": "coffee",
+    "subType": "Latte",
+    "price": "42",
+    "description": "İki ristretto espresso shot ve ustalıkla ısıtılmış süt üzerine latte sanatı süslemesi ile yoğun kahve severlerin yeni favorisi olmaya aday!",
+    "picture": "https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?data=eyJpbWFnZUlkIjoiODYwYjhmZGEtMzEyYy00MjIyLThjYzAtOGE0ZDcxZGM5ZGMwIiwid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjAsImZpdCI6Im91dHNpZGUiLCJjb250ZW50VHlwZSI6ImltYWdlL3dlYnAiLCJxdWFsaXR5IjozMH0="
+  },
+  {
+    "title": "Buzlu Caffè Latte",
+    "type": "coffee",
+    "subType": "Latte",
+    "price": "48",
+    "description": "Zengin espresso, soğuk süt ve buzun soğuk kahve severlerle buluşması",
+    "picture": "https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?data=eyJpbWFnZUlkIjoiMjFiM2FkMzktMTFiMy00YTIyLTk3YzUtMTA1MjczZDQ1ZDVkIiwid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjAsImZpdCI6Im91dHNpZGUiLCJjb250ZW50VHlwZSI6ImltYWdlL3dlYnAiLCJxdWFsaXR5IjozMH0="
+  },
+  {
+    "title": "Flat White",
+    "type": "coffee",
+    "subType": "Latte",
+    "price": "49",
+    "description": "Daha yoğun bir kahve deneyimi için ekstra espresso ile hazırlanarak latte sanatı ile tamamlanmış latte",
+    "picture": "https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?data=eyJpbWFnZUlkIjoiZjk0N2M4MTctMTU5NS00YmI0LWJjNDktMzhhMTA0OTUzNzQ1Iiwid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjAsImZpdCI6Im91dHNpZGUiLCJjb250ZW50VHlwZSI6ImltYWdlL3dlYnAiLCJxdWFsaXR5IjozMH0="
+  },
+  {
+    "title": "Caffè Latte",
+    "type": "coffee",
+    "subType": "Latte",
+    "price": "45",
+    "description": "Zengin espresso, buharla ısıtılmış kadifemsi süt ve süt köpüğünün dengeli buluşması",
+    "picture": "https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?data=eyJpbWFnZUlkIjoiODZmN2NjZmMtMjFjYi00NmY2LWFlNDItMmExYWVlM2E2ODQ5Iiwid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjAsImZpdCI6Im91dHNpZGUiLCJjb250ZW50VHlwZSI6ImltYWdlL3dlYnAiLCJxdWFsaXR5IjozMH0="
+  },
+  {
+    "title": "Ristretto Bianco",
+    "type": "coffee",
+    "subType": "Latte",
+    "price": "41",
+    "description": "Özel ristretto espresso ve ustalıkla ıstılmış süte latte sanatı ile zarif bir dokunuş",
+    "picture": "https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?data=eyJpbWFnZUlkIjoiMDE1OWJjZDEtM2Q5OS00OWU5LTg4M2EtMzQ0N2E1OTBjOTFlIiwid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjAsImZpdCI6Im91dHNpZGUiLCJjb250ZW50VHlwZSI6ImltYWdlL3dlYnAiLCJxdWFsaXR5IjozMH0="
+  },
+  {
+    "title": "Gingerbread Latte",
+    "type": "coffee",
+    "subType": "Latte",
+    "price": "47",
+    "description": "Espresso ve gingerbread şurubunun buharda ısıtılmış kadifemsi süt ile buluştuğu, zencefil aromalı krema ve çıtır gofret süslemesiyle sunulan Gingerbread lezzeti geri döndü!",
+    "picture": "https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?data=eyJpbWFnZUlkIjoiZjk0N2M4MTctMTU5NS00YmI0LWJjNDktMzhhMTA0OTUzNzQ1Iiwid2lkdGgiOjcyMCwiaGVpZ2h0Ijo3MjAsImZpdCI6Im91dHNpZGUiLCJjb250ZW50VHlwZSI6ImltYWdlL3dlYnAiLCJxdWFsaXR5IjozMH0="
+  }
+]
