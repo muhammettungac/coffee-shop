@@ -15,5 +15,5 @@ db.on("error", () => {
   console.log("MongoDB Bağlantısı kurulamadı.");
 });
 
-module.exports = db;
-// module.exports = mongoose;
+// module.exports = db;
+module.exports = mongoose;
