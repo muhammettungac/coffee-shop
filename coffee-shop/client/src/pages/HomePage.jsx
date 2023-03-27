@@ -1,30 +1,30 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllCoffee } from "../actions/CoffeeActions";
+import MenuList from "./MenuList";
 
 function HomePage() {
   const coffeeState = useSelector((state) => state.getAllCoffeeReducer);
-  const { coffees } = coffeeState;
+  const { coffees, loading } = coffeeState;
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getAllCoffee());
   }, []);
   return (
-    <div>
-      <div className="row">
-        {coffees.map((deger) => (
-          <div className="col">
-            <div className="card" style={{ width: "18rem" }}>
-              <img src={deger.picture} className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title">{deger.title}</h5>
-                <p className="card-text">{deger.description}</p>
-                <p className="card-text">{deger.price}</p>
-              </div>
-            </div>
+    <div className="container-fluid bg-success ">
+      <div className="row row-cols-auto">
+        {loading ? (
+          <div
+            className="spinner-border text-light mx-auto p-5 m-5 "
+            style={{ width: "5rem", height: "5rem" }}
+            role="status"
+          >
+            <span className="visually-hidden">Loading...</span>
           </div>
-        ))}
+        ) : (
+          coffees.map((deger) => <MenuList items={deger} />)
+        )}
       </div>
     </div>
   );
