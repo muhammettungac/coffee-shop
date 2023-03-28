@@ -6,13 +6,14 @@ function MenuList({ items }) {
   const dispatch = useDispatch();
 
   const [ozellik, setOzellik] = useState("small");
-  const [fiyat, setFiyat] = useState("");
+  const [fiyat, setFiyat] = useState(items.price[0]);
+  // const [deger1, setDeger1] = useState(0);
 
   const changeFunc = (e) => {
     setOzellik(e.target.value);
     var deger1 = items.sizes.indexOf(e.target.value);
-
-    console.log(deger1);
+    console.log(items);
+    setFiyat(items.price[deger1]);
   };
   // const addToCardFunc = () => {
   //   dispatch(addToCartAction(items,miktar,ozellik))

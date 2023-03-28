@@ -14,8 +14,12 @@ const coffeeSchema = new mongoose.Schema(
       type: String,
       require,
     },
+    sizes: {
+      type: Array,
+      require,
+    },
     price: {
-      type: Number,
+      type: Array,
       require,
     },
     description: {
