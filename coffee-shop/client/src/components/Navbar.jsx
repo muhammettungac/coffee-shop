@@ -1,6 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 function Navbar() {
+  const cartState = useSelector((state) => state.addToCartReducer);
+
+  const { cartItems } = cartState;
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -67,14 +72,15 @@ function Navbar() {
               </li>
             </ul>
             <form className="d-flex" role="search">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-success" type="submit">
-                Search
+              <button
+                className="btn btn-outline-success position-relative"
+                type="submit"
+              >
+                <i className="fa-solid fa-cart-shopping">
+                  <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                    {cartItems.length}
+                  </span>
+                </i>
               </button>
             </form>
           </div>
