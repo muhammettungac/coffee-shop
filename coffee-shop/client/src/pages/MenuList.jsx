@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addToCartAction } from "../actions/CartActions";
+import Modal from "react-bootstrap/Modal";
 
 function MenuList({ items }) {
+  /*Modal için UseStateler*/
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const dispatch = useDispatch();
   const [ozellik, setOzellik] = useState("small");
-  const [fiyat, setFiyat] = useState(items.price[0]);
   const [miktar, setMiktar] = useState(1);
   const [ozellikKey, setOzellikKey] = useState(0);
 
@@ -36,7 +41,12 @@ function MenuList({ items }) {
           border: "1px solid rgb(30, 59, 49)",
         }}
       >
-        <img src={items.picture} className="card-img-top rounded-4" alt="..." />
+        <img
+          src={items.picture}
+          className="card-img-top rounded-4"
+          alt="..."
+          onClick={handleShow}
+        />
         <div className="card-body ">
           <h5 className="card-title">{items.title}...</h5>
           <p className="card-text">{items.description.slice(0, 40)}...</p>
@@ -75,6 +85,28 @@ function MenuList({ items }) {
           </button>
         </div>
       </div>
+      {/* Modal Başlangıcı */}
+      <Modal
+        show={show}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>{items.title}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body className="text-center">
+          <img src={items.picture} style={{ height: "250px" }} />
+          <h4>Kategori: {items.type}</h4>
+          <h6>Alt Kategori : {items.subType}</h6>
+          <p>{items.description}</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <button className="btn btn-success w-100" onClick={handleClose}>
+            KAPAT
+          </button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 }
