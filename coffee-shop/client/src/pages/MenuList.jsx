@@ -13,10 +13,9 @@ function MenuList({ items }) {
   const [ozellik, setOzellik] = useState("small");
   const [miktar, setMiktar] = useState(1);
   const [ozellikKey, setOzellikKey] = useState(0);
-
   const changeFunc = (e) => {
     setOzellik(e.target.value);
-    setOzellikKey(items.sizes.indexOf(e.target.value));
+    setOzellikKey(items.fiyat[items.sizes.indexOf(e.target.value)]);
   };
 
   const adetHandler = (e) => {
@@ -27,7 +26,7 @@ function MenuList({ items }) {
     }
   };
   const addToCardFunc = () => {
-    dispatch(addToCartAction(items, miktar, ozellik, ozellikKey));
+    dispatch(addToCartAction(items, miktar, ozellik, items.price[ozellikKey]));
   };
 
   return (
@@ -75,7 +74,9 @@ function MenuList({ items }) {
             </div>
           </div>
 
-          <p className="card-text">{items.price[ozellikKey] * miktar} ₺</p>
+          <p className="card-text">
+            {items.price[ozellikKey] * Number(miktar)} ₺
+          </p>
           <button
             type="button"
             className="btn btn-success"

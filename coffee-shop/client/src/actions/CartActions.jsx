@@ -1,20 +1,18 @@
 export const addToCartAction =
-  (items, miktar, ozellik, ozellikKey) => (dispatch, getState) => {
+  (items, miktar, ozellik, price) => (dispatch, getState) => {
     var cartItem = {
+      _id: items._id,
       title: items.title,
       type: items.type,
       subType: items.subType,
-      size: ozellik,
-      sizeKey: ozellikKey,
-      price: items.price[ozellikKey],
-      quantity: miktar,
+      ozellik: ozellik,
+      miktar: miktar,
+      price: price,
+      prices: price * miktar,
       description: items.description,
       picture: items.picture,
     };
-    if (miktar < 1) {
-      cartItem.quantity = 1;
-    }
-
+    console.log(cartItem);
     if (miktar > 0) {
       dispatch({ type: "ADD_TO_CART", payload: cartItem });
 
