@@ -40,13 +40,15 @@ function CartPage() {
                 <p className="text-success fw-bold">{coffees.title} </p>
               </div>
               <div className="col my-auto">
-                <p className="text-success fw-semibold">{coffees.size}</p>
+                <p className="text-success fw-semibold">
+                  {coffees.ozellik.toUpperCase()}
+                </p>
               </div>
               <div className="col my-auto">
                 <p className="text-success fw-normal">{coffees.description}</p>
               </div>
               <div className="col my-auto">
-                <p className="text-success fw-normal">{coffees.price}</p>
+                <p className="text-success fw-normal">{coffees.price} ₺</p>
               </div>
 
               <div className="col my-auto">

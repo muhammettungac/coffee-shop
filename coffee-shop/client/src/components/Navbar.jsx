@@ -74,7 +74,13 @@ function Navbar() {
             </ul>
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link className="nav-link text-success" to="/sepet">
+                <Link to="/register">
+                  <button className="btn btn-outline-success">Register</button>{" "}
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link className="nav-link text-success" to="/cart">
                   Sepet
                   <i className="fa-sharp fa-solid fa-bag-shopping mx-2"></i>
                   <span className="position-absolute top-10 start-80 translate-middle badge rounded-pill bg-success">
