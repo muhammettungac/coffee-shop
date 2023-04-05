@@ -13,9 +13,10 @@ function MenuList({ items }) {
   const [ozellik, setOzellik] = useState("small");
   const [miktar, setMiktar] = useState(1);
   const [ozellikKey, setOzellikKey] = useState(0);
+
   const changeFunc = (e) => {
     setOzellik(e.target.value);
-    setOzellikKey(items.fiyat[items.sizes.indexOf(e.target.value)]);
+    setOzellikKey(items.sizes.indexOf(e.target.value));
   };
 
   const adetHandler = (e) => {
@@ -51,12 +52,7 @@ function MenuList({ items }) {
           <p className="card-text">{items.description.slice(0, 40)}...</p>
           <div className="row w-100">
             <div className="col-6">
-              <select
-                name=""
-                id=""
-                className="form-select2 mb-3"
-                onChange={changeFunc}
-              >
+              <select className="form-select2 mb-3" onChange={changeFunc}>
                 {items.sizes.map((size, index) => (
                   <option key={index} value={size}>
                     {size}
