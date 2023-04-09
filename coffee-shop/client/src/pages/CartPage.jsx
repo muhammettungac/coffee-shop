@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCartAction } from "../actions/CartActions";
+import CheckoutPage from "./CheckoutPage";
 
 function CartPage() {
   const cartState = useSelector((state) => state.addToCartReducer);
@@ -22,6 +24,7 @@ function CartPage() {
           <div className="row">
             <p className="text-success">Toplam : {totalPrice} ₺ </p>
           </div>
+          <CheckoutPage toplamfiyat={totalPrice} />
 
           {cartItems.map((coffees) => (
             <div

@@ -10,7 +10,7 @@ function Navbar() {
   const { currentUser } = userState;
   const dispatch = useDispatch();
 
-  console.log(currentUser);
+  // console.log(currentUser);
 
   const logoutHandler = () => {
     dispatch(userLogoutAction());
