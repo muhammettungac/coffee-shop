@@ -2,6 +2,7 @@ const express = require("express");
 const UserModel = require("../models/UserModel");
 const router = express.Router();
 
+//Register işlemi
 router.post("/register", async (req, res) => {
   const { name, password, mail } = req.body;
 
@@ -21,6 +22,23 @@ router.post("/register", async (req, res) => {
     } catch (error) {
       res.send("User register is failed");
     }
+  }
+});
+
+//Login işlemi
+router.post("/login", async (req, res) => {
+  const { password, mail } = req.body;
+
+  try {
+    const user = await UserModel.find({ mail: mail, password: password });
+
+    if (user.length > 0) {
+      res.send(user[0]);
+    } else {
+      res.status(400).json({ message: "Kullanıcı Girişi Hatalı" });
+    }
+  } catch (error) {
+    res.send(error);
   }
 });
 
