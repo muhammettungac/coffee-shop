@@ -22,7 +22,7 @@ function CheckoutPage({ toplamfiyat }) {
         stripeKey="pk_test_51MooauCHYN1T3yAzP5iGiLMRlVipuhy4xf1d5WqyxuX1ROcX71L8kifda1JvXIBzUwSimTJgxHi8C1WT4ywzVsXo00N8rebybO"
         currency="TRY"
       >
-        <button className="btn btn-outline-danger mb-3 w-25">HEMEN ÖDE!</button>
+        <button className="btn btn-outline-danger my-3 w-25">HEMEN ÖDE!</button>
       </StripeCheckout>
     </div>
   );

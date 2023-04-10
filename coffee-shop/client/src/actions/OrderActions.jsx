@@ -14,6 +14,7 @@ export const checkoutOrderAction =
 
       dispatch({ type: "CHECKOUT_ORDER_SUCCESS", payload: response.data });
       localStorage.removeItem("cartItems");
+      window.location.href = "/";
     } catch (error) {
       dispatch({ type: "CHECKOUT_ORDER_FAILED", payload: error });
       console.log(error);
