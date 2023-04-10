@@ -12,7 +12,7 @@ const orderSchema = new mongoose.Schema(
     transactionId: { type: String, require },
   },
   {
-    timestamps: false,
+    timestamps: true,
   }
 );
 

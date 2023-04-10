@@ -8,6 +8,7 @@ import {
   loginUserReducer,
   logoutUserReducer,
 } from "./reducers/UserReducers";
+import { getUserOrdersReducer } from "./reducers/OrderReducers";
 
 const compose = composeWithDevTools({});
 
@@ -17,6 +18,7 @@ const finalReducers = combineReducers({
   registerUserReducer: registerUserReducer,
   loginUserReducer: loginUserReducer,
   logoutUserReducer: logoutUserReducer,
+  getUserOrdersReducer: getUserOrdersReducer,
 });
 
 const cartItems = localStorage.getItem("cartItems")

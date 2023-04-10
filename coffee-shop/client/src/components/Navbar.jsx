@@ -19,9 +19,9 @@ function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
+          <a className="navbar-brand" href="#">
             Navbar
-          </Link>
+          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -81,62 +81,67 @@ function Navbar() {
               </li>
             </ul>
             <ul className="navbar-nav ms-auto">
-              {currentUser ? (
-                <ul className="navbar-nav ms-auto">
-                  <div className="dropdown ">
-                    <button
-                      className="btn btn-success dropdown-toggle"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Hoşgeldiniz {currentUser.name}
-                    </button>
-                    <ul className="dropdown-menu ">
-                      <li>
-                        <Link className="dropdown-item text-success" to="/">
-                          Siparişlerim
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="dropdown-item text-danger"
-                          onClick={logoutHandler}
-                        >
-                          Logout
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                  <li className="nav-item">
-                    <Link className="nav-link text-success" to="/cart">
-                      Sepet
-                      <i className="fa-sharp fa-solid fa-bag-shopping mx-2"></i>
-                      <span className="position-absolute top-10 start-80 translate-middle badge rounded-pill bg-success">
-                        {cartItems.length}
-                      </span>
+              <li className="nav-item">
+                {currentUser == null ? (
+                  <div className="d-flex flex-row">
+                    <Link to="/register">
+                      <button className="btn btn-outline-success">
+                        Kayıt Ol
+                      </button>
                     </Link>
-                  </li>
-                </ul>
-              ) : (
-                <div className="d-flex flex-row">
-                  <Link to="/register">
-                    <button className="btn btn-outline-success">
-                      Kayıt Ol
-                    </button>
-                  </Link>
 
-                  <li className="nav-item">
-                    <Link className="nav-link text-success" to="/cart">
-                      Sepet
-                      <i className="fa-sharp fa-solid fa-bag-shopping mx-2"></i>
-                      <span className="position-absolute top-10 start-80 translate-middle badge rounded-pill bg-success">
-                        {cartItems.length}
-                      </span>
-                    </Link>
-                  </li>
-                </div>
-              )}
+                    <li className="nav-item">
+                      <Link className="nav-link text-success" to="/cart">
+                        Sepet
+                        <i className="fa-sharp fa-solid fa-bag-shopping mx-2"></i>
+                        <span className="position-absolute top-10 start-80 translate-middle badge rounded-pill bg-success">
+                          {cartItems.length}
+                        </span>
+                      </Link>
+                    </li>
+                  </div>
+                ) : (
+                  <ul className="navbar-nav ms-auto">
+                    <div className="dropdown ">
+                      <button
+                        className="btn btn-success dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Hoşgeldiniz {currentUser.name}
+                      </button>
+                      <ul className="dropdown-menu ">
+                        <li>
+                          <Link
+                            className="dropdown-item text-success"
+                            to="/orders"
+                          >
+                            Siparişlerim
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className="dropdown-item text-danger"
+                            onClick={logoutHandler}
+                          >
+                            Logout
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                    <li className="nav-item">
+                      <Link className="nav-link text-success" to="/cart">
+                        Sepet
+                        <i className="fa-sharp fa-solid fa-bag-shopping mx-2"></i>
+                        <span className="position-absolute top-10 start-80 translate-middle badge rounded-pill bg-success">
+                          {cartItems.length}
+                        </span>
+                      </Link>
+                    </li>
+                  </ul>
+                )}
+              </li>
             </ul>
           </div>
         </div>
