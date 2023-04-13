@@ -72,3 +72,15 @@ export const userLogoutAction = () => (dispatch) => {
     dispatch({ type: "USER_LOGOUT_FAILED" });
   }
 };
+
+export const getAllUserAction = () => async (dispatch) => {
+  dispatch({ type: "GET_ALL_USER_REQUEST" });
+  try {
+    const response = await axios.get(
+      "http://localhost:4000/api/users/getAllUser"
+    );
+    dispatch({ type: "GET_ALL_USER_SUCCESS", payload: response.data });
+  } catch (error) {
+    dispatch({ type: "GET_ALL_USER_FAILED", payload: error });
+  }
+};

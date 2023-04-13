@@ -15,7 +15,7 @@ function AdminPage() {
   const { currentUser } = userState;
   // const user = localStorage.getItem("currentUser");
   useEffect(() => {
-    if (currentUser == null || currentUser.isAdmin != true) {
+    if (currentUser == null || currentUser.isAdmin !== true) {
       navigate("/");
     }
   }, [currentUser]);
@@ -36,7 +36,7 @@ function AdminPage() {
       />
       <h2 className="display-2 text-dark my-2 fw-bold">YÖNETİCİ PANELİ</h2>
       <hr />
-      <nav className="navbar navbar-expand-lg bg-warning w-50 mx-auto">
+      <nav className="navbar navbar-expand-lg bg-success w-50 mx-auto">
         <div className="container-fluid">
           <button
             className="navbar-toggler"
@@ -53,25 +53,25 @@ function AdminPage() {
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
                 <Link
-                  className="nav-link active"
+                  className="nav-link active text-white"
                   aria-current="page"
                   to="userslist"
                 >
                   Kullanıcı Listesi
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="menulist">
+              <li className="nav-item ">
+                <Link className="nav-link text-white" to="menulist">
                   Menü Listesi
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="addmenu">
+                <Link className="nav-link text-white" to="addmenu">
                   Yeni Menü Ekle
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="orderslist">
+                <Link className="nav-link text-white" to="orderslist">
                   Sipariş Listesi
                 </Link>
               </li>

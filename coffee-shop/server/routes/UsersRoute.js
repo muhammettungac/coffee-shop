@@ -42,4 +42,15 @@ router.post("/login", async (req, res) => {
   }
 });
 
+// Admin getAllUser
+
+router.get("/getAllUser", async (req, res) => {
+  try {
+    const users = await UserModel.find({});
+    res.send(users);
+  } catch (error) {
+    res.send(error);
+  }
+});
+
 module.exports = router;
