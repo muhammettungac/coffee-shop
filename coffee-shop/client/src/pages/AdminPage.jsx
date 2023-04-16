@@ -85,7 +85,7 @@ function AdminPage() {
         <Route path="orderslist" element={<OrdersList />} />
         <Route path="menulist" element={<MenusList />} />
         <Route path="addmenu" element={<AddMenu />} />
-        <Route path="editmenu/:burgerid" element={<EditMenu />} />
+        <Route path="editmenu/:coffeeid" element={<EditMenu />} />
       </Routes>
     </div>
   );
