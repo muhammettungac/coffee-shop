@@ -64,4 +64,27 @@ router.post("/getUserOrders", async (req, res) => {
   }
 });
 
+router.get("/getAllOrders", async (req, res) => {
+  try {
+    const orders = await OrderModel.find({});
+    res.send(orders);
+  } catch (error) {
+    res.send(error);
+  }
+});
+
+router.post("/deliverOrder", async (req, res) => {
+  const { orderid } = req.body;
+
+  try {
+    const deliver = await OrderModel.findOne({ _id: orderid });
+
+    deliver.isDelivered = true;
+
+    await deliver.save();
+    res.send("Sipariş Başarıyla Teslim Edildi. ");
+  } catch (error) {
+    res.status(400).json({ message: "Siparişlere Erişilemiyor", error });
+  }
+});
 module.exports = router;

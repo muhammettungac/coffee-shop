@@ -45,3 +45,51 @@ export const getUserOrdersReducer = (state = { orders: [] }, action) => {
       return state;
   }
 };
+
+export const getAllOrdersReducer = (state = { orders: [] }, action) => {
+  switch (action.type) {
+    case "GET_ALL_ORDERS_REQUEST":
+      return {
+        ...state,
+        loading: true,
+      };
+    case "GET_ALL_ORDERS_SUCCESS":
+      return {
+        loading: false,
+        success: true,
+        orders: action.payload,
+      };
+    case "GET_ALL_ORDERS_FAILED":
+      return {
+        error: action.payload,
+        loading: false,
+      };
+
+    default:
+      return state;
+  }
+};
+
+export const deliverOrderReducer = (state = {}, action) => {
+  switch (action.type) {
+    case "DELIVER_ORDER_REQUEST":
+      return {
+        ...state,
+        loading: true,
+      };
+    case "DELIVER_ORDER_SUCCESS":
+      return {
+        loading: false,
+        success: true,
+        orders: action.payload,
+      };
+    case "DELIVER_ORDER_FAILED":
+      return {
+        loading: false,
+        error: action.payload,
+      };
+
+    default:
+      return state;
+  }
+};
