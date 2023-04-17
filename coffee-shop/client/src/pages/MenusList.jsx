@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteCoffeeAction, getAllCoffee } from "../actions/CoffeeActions";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function MenusList() {
-  const navigate = useNavigate();
   const coffeeState = useSelector((state) => state.getAllCoffeeReducer);
   const { coffees } = coffeeState;
   const dispatch = useDispatch();
@@ -30,7 +29,7 @@ function MenusList() {
           </thead>
           <tbody>
             {coffees.map((coffee) => (
-              <tr>
+              <tr key={coffee._id}>
                 <td>{coffee._id}</td>
                 <td>
                   <img className="w-100" src={coffee.picture} alt="" />
@@ -38,13 +37,13 @@ function MenusList() {
                 <td>{coffee.title}</td>
                 <td>{coffee.type} </td>
                 <td>{coffee.description}</td>
-                <td>small,medium,large </td>
                 <td>
                   Small: {coffee.price[0]}₺ <br />
                   Medium: {coffee.price[1]}₺ <br />
                   Large: {coffee.price[2]}₺ <br />
                 </td>
 
+                <td>small,medium,large </td>
                 <td>
                   <Link to={`/admin/editmenu/${coffee._id}`}>
                     <i className="fa-solid fa-pen-to-square text-info mx-2" />

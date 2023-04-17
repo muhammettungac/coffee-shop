@@ -1,4 +1,6 @@
 import {
+  addCoffeeReducer,
+  editCoffeeReducer,
   getAllCoffeeReducer,
   getCoffeeByIdReducer,
 } from "./reducers/CoffeeReducers";
@@ -31,6 +33,8 @@ const finalReducers = combineReducers({
   getAllOrdersReducer: getAllOrdersReducer,
   deliverOrderReducer: deliverOrderReducer,
   getCoffeeByIdReducer: getCoffeeByIdReducer,
+  editCoffeeReducer: editCoffeeReducer,
+  addCoffeeReducer: addCoffeeReducer,
 });
 
 const cartItems = localStorage.getItem("cartItems")

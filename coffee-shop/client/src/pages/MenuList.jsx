@@ -53,8 +53,8 @@ function MenuList({ items }) {
           <div className="row w-100">
             <div className="col-6">
               <select className="form-select2 mb-3" onChange={changeFunc}>
-                {items.sizes.map((size, index) => (
-                  <option key={index} value={size}>
+                {items.sizes.map((size) => (
+                  <option key={size} value={size}>
                     {size}
                   </option>
                 ))}

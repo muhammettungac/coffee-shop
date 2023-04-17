@@ -38,17 +38,47 @@ export const deleteCoffeeAction = (coffeeid) => async (dispatch) => {
   }
 };
 
-export const getCoffeeByIdAction = () => async (dispatch) => {
+export const getCoffeeByIdAction = (coffeeid) => async (dispatch) => {
   dispatch({ type: "GET_A_COFFEE_REQUEST" });
 
   try {
-    const response = await axios.get(
-      "http://localhost:4000/api/coffees/getCoffeeById"
+    const response = await axios.post(
+      "http://localhost:4000/api/coffees/getCoffeeById",
+      { coffeeid }
     );
     // const response = await axios.get("http://localhost:6000/getCoffees");
-
+    console.log(response);
     dispatch({ type: "GET_A_COFFEE_SUCCESS", payload: response.data });
   } catch (error) {
     dispatch({ type: "GET_A_COFFEE_FAILED", payload: error });
+  }
+};
+
+export const editCoffeeAction = (editedCoffee) => async (dispatch) => {
+  dispatch({ type: "EDIT_COFFEE_REQUEST" });
+
+  try {
+    const response = await axios.post(
+      "http://localhost:4000/api/coffees/editCoffee",
+      { editedCoffee }
+    );
+    dispatch({ type: "EDIT_COFFEE_SUCCESS", payload: response.data });
+  } catch (error) {
+    dispatch({ type: "EDIT_COFFEE_FAILED", payload: error });
+  }
+};
+
+export const addCoffeeAction = (coffee) => async (dispatch) => {
+  dispatch({ type: "ADD_COFFEE_REQUEST" });
+
+  try {
+    const response = await axios.post(
+      "http://localhost:4000/api/coffees/addCoffee",
+      { coffee }
+    );
+    dispatch({ type: "ADD_COFFEE_SUCCESS", payload: response.data });
+    // window.location.href("/admin/menulist");
+  } catch (error) {
+    dispatch({ type: "ADD_COFFEE_FAILED", payload: error });
   }
 };
